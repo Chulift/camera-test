@@ -1,0 +1,138 @@
+.content {
+  padding: 10px;
+}
+
+.submenu {
+  overflow-y: hidden;
+  transition: transform 300ms ease;
+  transform: scaleY(0);
+  transform-origin: top;
+  padding-left: 30px;
+}
+
+.submenu.expanded {
+  transform: scaleY(1);
+}
+
+.sidenav {
+  user-select: none;
+}
+
+.docs-component-viewer-sidenav-container {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.docs-component-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.docs-component-sidenav-inner-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.docs-component-sidenav-body-content {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.docs-component-viewer-nav {
+  position: sticky;
+  top: 0;
+}
+
+.docs-component-viewer-nav .docs-component-viewer-nav-content {
+  width: 240px;
+  height: 100vh;
+  overflow: auto;
+}
+.docs-component-viewer-nav-content {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.component-viewer {
+  font-weight: 400;
+  width: calc(100% - 241px - 100px);
+  padding: 20px 50px;
+}
+
+.docs-component-viewer-content {
+  position: relative;
+  min-height: 500px;
+}
+
+div.row {
+  margin-left: 0px;
+}
+
+.video-viewer {
+  display: block;
+  padding: 20px 0;
+}
+
+.video-one {
+  .docs-video-viewer-wrapper {
+    border-radius: 4px;
+    margin: 24px 0;
+    min-width: 540px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .docs-video-viewer-title {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px 8px 8px 16px;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .docs-video-viewer-body {
+    padding: 30px;
+    width: 100%;
+
+    video {
+      width: 100%;
+      height: auto;
+      min-height: 400px;
+      background-color: black;
+      outline: none;
+    }
+  }
+}
+
+.video-four {
+  .docs-video-viewer-wrapper {
+    border-radius: 4px;
+    width: 510px;
+    margin: 24px 15px;
+    min-width: 540px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .docs-video-viewer-title {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px 8px 8px 16px;
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .docs-video-viewer-body {
+    padding: 5px;
+    width: 100%;
+
+    video {
+      width: 100%;
+      height: auto;
+      min-height: 400px;
+      background-color: black;
+      outline: none;
+    }
+  }
+}

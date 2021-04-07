@@ -1,0 +1,108 @@
+<mat-sidenav-container class="sidenav-container docs-component-viewer-sidenav-container">
+    <mat-sidenav-content>
+        <div class="docs-component-sidenav-content">
+            <div class="docs-component-sidenav-inner-content">
+                <main class="docs-component-sidenav-body-content">
+
+                    <mat-drawer-container>
+                        <div class="docs-component-viewer-nav">
+                            <div class="docs-component-viewer-nav-content">
+                                <mat-nav-list role="navigation">
+
+                                    <ng-container
+                                        *ngFor="let videoGroup of videoForm.get('videoGroups')['controls']; let idx = index">
+                                        <mat-list-item>
+                                            <span #groupName class="w-100">{{videoGroup.controls.name.value}}</span>
+                                            <mat-icon class="menu-button" [ngClass]="{'rotated' : true}">expand_more
+                                            </mat-icon>
+                                        </mat-list-item>
+
+                                        <div class="submenu" [ngClass]="{'expanded': true}">
+                                            <mat-list-item>Camera 1</mat-list-item>
+                                        </div>
+                                    </ng-container>
+
+                                    <div>
+                                        <button mat-button>
+                                            <mat-icon>add_circle</mat-icon>Add Group
+                                        </button>
+                                    </div>
+
+                                </mat-nav-list>
+                            </div>
+                        </div>
+                    </mat-drawer-container>
+
+                    <div class="component-viewer">
+                        <mat-tab-group>
+
+                            <mat-tab label="1 by 1">
+                                <ng-template matTabContent>
+                                    <div class="docs-component-viewer-content">
+                                        <div class="video-viewer video-one">
+                                            <div class="docs-video-viewer-wrapper">
+                                                <div class="docs-video-viewer-title">
+                                                    Camera X
+                                                </div>
+                                                <div class="docs-video-viewer-body">
+                                                    <video src=""></video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ng-template>
+                            </mat-tab>
+
+                            <mat-tab label="4 by 1">
+                                <ng-template matTabContent>
+                                    <div class="docs-component-viewer-content">
+                                        <div class="video-viewer video-four">
+                                            <div class="row">
+
+                                                <div class="docs-video-viewer-wrapper col">
+                                                    <div class="docs-video-viewer-title">
+                                                        Camera X
+                                                    </div>
+                                                    <div class="docs-video-viewer-body">
+                                                        <video src=""></video>
+                                                    </div>
+                                                </div>
+
+                                                <div class="docs-video-viewer-wrapper col">
+                                                    <div class="docs-video-viewer-title">
+                                                        Camera X
+                                                    </div>
+                                                    <div class="docs-video-viewer-body">
+                                                        <video src=""></video>
+                                                    </div>
+                                                </div>
+
+                                                <div class="docs-video-viewer-wrapper col">
+                                                    <div class="docs-video-viewer-title">
+                                                        Camera X
+                                                    </div>
+                                                    <div class="docs-video-viewer-body">
+                                                        <video src=""></video>
+                                                    </div>
+                                                </div>
+
+                                                <div class="docs-video-viewer-wrapper col">
+                                                    <div class="docs-video-viewer-title">
+                                                        Camera X
+                                                    </div>
+                                                    <div class="docs-video-viewer-body">
+                                                        <video src=""></video>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ng-template>
+                            </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

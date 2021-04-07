@@ -1,0 +1,24 @@
+
+<mat-sidenav-container class="sidenav-container h-100" autosize>
+
+    <mat-sidenav #sidenav opened="true" mode="side" class="sidenav">
+
+        <mat-nav-list>
+            <mat-list-item>
+                <span class="w-100">Group 1</span>
+
+            </mat-list-item>
+
+            <div class="submenu" [ngClass]="{'expanded': true}">
+                <a mat-list-item href="...">Camera 1</a>
+            </div>
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <button mat-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
